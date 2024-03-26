@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS CREATIVE BOX HOVER EFFECTS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="content">
+                <h2>GOOD NIGHT</h2>
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+    <svg>
+        <filter id="wavy" x="-50%" y="-50%" width="200%" height="200%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="5" seed="2">
+                <animate attributeName="baseFrequency" dur="40s" values="0.05;0.1;0.05" repeatCount="indefinite"/>
+            </feTurbulence>
+            <feDisplacementMap in="SourceGraphic" scale="30"/>
+        </filter>
+    </svg>
+</body>
+</html>

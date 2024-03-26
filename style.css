@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #0f1219;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #1e232f;
+    padding: 10px 0;
+    margin: 0;
+    z-index: 999;
+    width: 100%;
+    text-align: center;
+}
+
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-style: bold;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    margin-right: 20px;
+    padding: 0 15px;
+    position: relative;
+    z-index: 2; /* Adjusted z-index to place text above the marker */
+}
+
+#marker {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 90px;
+    border-bottom: 5px solid rgb(255, 255, 255); /* Adjusted to use RGBA with transparency */
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(89, 89, 89, 0.5)); /* Adjusted to use RGBA with transparency */
+    transition: 0.5s;
+    pointer-events: none;
+    filter: drop-shadow(0 5px 25px rgba(255, 255, 255, 0.5)); /* Adjusted to use RGBA with transparency */
+    left: 0;
+    z-index: 1; /* Adjusted z-index to place marker behind the text */
+}
+
+
+.section {
+    padding-top: 60px;
+    min-height: 100vh;
+}
+
+.nav-link-active {
+    color: #000000;
+    font-style: bold;
+}
+.container1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 .box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-reflect: below 15px linear-gradient(transparent, transparent, rgba(0,0,0,.2));
+    z-index: 1; /* Ensure content is above the SVG filter */
+}
+
+.container1 .box:hover {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: bolder;
+    
+}
+
+.container1 .box:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #fff;
+    background: url(https://img.freepik.com/free-vector/instagram-background-gradient-colors_23-2147819865.jpg?size=626&ext=jpg&ga=GA1.1.594476301.1707289631&semt=ais);
+    background-size: 300px 400px;
+    filter: url(#wavy);
+    z-index: -1; /* Ensure the SVG filter is below the content */
+}
+
+.container1 .box:hover::before {
+    background: url(https://img.freepik.com/free-photo/metal-grunge-background-with-scratches-stains_1048-14029.jpg?t=st=1710926712~exp=1710930312~hmac=7bbfeafa262573e726686c45f701c819950d970e97b0915e4cbda6212ce67626&w=740);
+    background-size: 300px 300px;
+    transition: 0.5s;
+    
+}
+
+.container1 .box .content {
+    position: relative; /* Change to relative */
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+
+/*container3---------------------------------------*/
+.container3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container3 .box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-reflect: below 15px linear-gradient(transparent, transparent, rgba(0,0,0,.2));
+    z-index: 1; /* Ensure content is above the SVG filter */
+}
+
+.container3 .box:hover {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: bolder;
+    
+}
+
+.container3 .box:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #fff;
+    background: url(https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-3969.jpg?w=996&t=st=1710928791~exp=1710929391~hmac=628b1c2175ba7bb10aeed8f7e6fea583dd3e835b11bf94fe8e42af096b64d71c);
+    background-size: 300px 400px;
+    filter: url(#wavy);
+    z-index: -1; /* Ensure the SVG filter is below the content */
+}
+
+.container3 .box:hover::before {
+    background: url(https://img.freepik.com/free-photo/metal-grunge-background-with-scratches-stains_1048-14029.jpg?t=st=1710926712~exp=1710930312~hmac=7bbfeafa262573e726686c45f701c819950d970e97b0915e4cbda6212ce67626&w=740);
+    background-size: 300px 300px;
+    transition: 0.5s;
+    
+}
+
+.container3 .box .content {
+    position: relative; /* Change to relative */
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+/*container4---------------------------------------*/
+.container4 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container4 .box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-reflect: below 15px linear-gradient(transparent, transparent, rgba(0,0,0,.2));
+    z-index: 1; /* Ensure content is above the SVG filter */
+}
+
+.container4 .box:hover {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: bolder;
+    
+}
+
+.container4 .box:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #fff;
+    background: url(https://www.veeforu.com/wp-content/uploads/2022/12/YT-thumbnail-background-seperated-with-green-shades-1024x576.jpg);
+    background-size: 300px 400px;
+    filter: url(#wavy);
+    z-index: -1; /* Ensure the SVG filter is below the content */
+}
+
+.container4 .box:hover::before {
+    background: url(https://img.freepik.com/free-photo/metal-grunge-background-with-scratches-stains_1048-14029.jpg?t=st=1710926712~exp=1710930312~hmac=7bbfeafa262573e726686c45f701c819950d970e97b0915e4cbda6212ce67626&w=740);
+    background-size: 300px 300px;
+    transition: 0.5s;
+    
+}
+
+.container4 .box .content {
+    position: relative; /* Change to relative */
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+/*container5---------------------------------------*/
+.container5 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container5 .box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-reflect: below 15px linear-gradient(transparent, transparent, rgba(0,0,0,.2));
+    z-index: 1; /* Ensure content is above the SVG filter */
+}
+
+.container5 .box:hover {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: bolder;
+    
+}
+
+.container5 .box:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #ffffff;
+    background: url(https://wallpapers.com/images/high/gmail-blurred-colors-7g89u76d4aojqqw9.webp);
+    background-size: 300px 400px;
+    filter: url(#wavy);
+    z-index: -1; /* Ensure the SVG filter is below the content */
+}
+
+.container5 .box:hover::before {
+    background: url(https://img.freepik.com/free-photo/metal-grunge-background-with-scratches-stains_1048-14029.jpg?t=st=1710926712~exp=1710930312~hmac=7bbfeafa262573e726686c45f701c819950d970e97b0915e4cbda6212ce67626&w=740);
+    background-size: 300px 300px;
+    transition: 0.5s;
+    
+}
+
+.container5 .box .content {
+    position: relative; /* Change to relative */
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+/*titles---------------------------------*/
+.container6 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container6 .box {
+    position: relative;
+    width: 250px;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-reflect: below 15px linear-gradient(transparent, transparent, rgba(0,0,0,.2));
+    z-index: 1; /* Ensure content is above the SVG filter */
+}
+
+.container6 .box:hover {
+    color: rgb(255, 255, 255);
+    
+    font-weight: bolder;
+    
+}
+
+.container6 .box:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #ffffff;
+    background: url(https://img.freepik.com/free-photo/low-angle-shot-mesmerizing-starry-sky_181624-27925.jpg?w=996&t=st=1710933319~exp=1710933919~hmac=02957aa7d4ce65921d36b0324c484d44ab4077b9c2879b0b3827e11d0ccc83ac);
+    background-size: 300px 400px;
+    filter: url(#wavy);
+    z-index: -1; /* Ensure the SVG filter is below the content */
+}
+
+.container6 .box:hover::before {
+    background: url(https://img.freepik.com/free-photo/low-angle-shot-mesmerizing-starry-sky_181624-27925.jpg?w=996&t=st=1710933319~exp=1710933919~hmac=02957aa7d4ce65921d36b0324c484d44ab4077b9c2879b0b3827e11d0ccc83ac);
+    background-size: 300px 300px;
+    transition: 0.5s;
+    
+}
+
+.container6 .box .content {
+    position: relative; /* Change to relative */
+    padding-bottom: 10px;
+    text-align: center;
+    transition: 0.5s;
+}
